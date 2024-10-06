@@ -36,7 +36,7 @@
         "babel-plugin-template-html-minifier": "^4.1.0",
         "babel-plugin-transform-dynamic-import": "^2.1.0",
         "commit-and-tag-version": "^12.4.1",
-        "rimraf": "^5.0.7",
+        "rimraf": "^6.0.1",
         "rollup-plugin-esbuild": "^6.1.1"
     },
     "customElements": "custom-elements.json"
