@@ -7,7 +7,7 @@
     "type": "module",
     "scripts": {
         "start": "web-dev-server",
-        "build": "echo 'Build step placeholder'",
+        "build": "del public && rollup -c rollup.config.js && npm run analyze",
         "analyze": "cem analyze --litelement --exclude public",
         "release": "npm run build && commit-and-tag-version && git push --follow-tags origin main && npm publish"
     },
@@ -21,7 +21,8 @@
     "dependencies": {
         "@haxtheweb/d-d-d": "^9.0.6",
         "@haxtheweb/multiple-choice": "^9.0.6",
-        "lit": "^3.1.4"
+        "lit": "^3.1.4",
+        "rimraf": "^3.0.2"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.16.4",
